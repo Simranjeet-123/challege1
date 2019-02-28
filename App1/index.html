@@ -6,7 +6,52 @@
     <link href="css/default.css" rel="stylesheet" />
 </head>
 <body>
-    <div>Content goes here!</div>
-    <script src="js/main.js"></script>
+
+    <script>
+
+        /*var addition =
+        {
+
+            add: function () {
+                var sum = 0;
+                for (i = 1109; i >= 119; i - 11) {
+
+                    var sum = sum + i;
+
+                }
+                document.write(sum);
+            }
+        }
+        document.write(addition.add());
+        //simranjeet kaur(744302) and harmanpreet kaur(742456)*/
+
+        var startNumber = prompt("please enter start number");
+        var stepNumber = prompt("please enter step number");
+        var lastNumber = prompt("please enter last number");
+        var addition =
+        {
+          
+            add: function (start,end,counter) {
+                sum = 0;
+                for (i = start; i >= end; i -= counter) {
+
+                     sum = Number(sum) + Number(i);
+                    
+                }
+                return (sum);
+            }
+
+        };
+
+
+        document.write(addition.add(startNumber, lastNumber, stepNumber));
+
+
+    </script>
+  
+
+
+
+
 </body>
 </html>
